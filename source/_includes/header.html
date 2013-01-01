@@ -7,7 +7,9 @@
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">
 	<div class="social">
+	  {% if site.taskrabbit_link %}
 	  <a class="taskrabbit" href="http://www.taskrabbit.com" title="TaskRabbit">TaskRabbit</a>
+	  {% endif %}
 		{% if site.facebook_user %}
 		<a class="facebook" href="http://www.facebook.com/{{ site.facebook_user }}" title="Facebook">Facebook</a>
 		{% endif %}
